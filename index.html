@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <style>
+      body {
+  background: linear-gradient(to right, rgb(206, 170, 195), rgb(195, 226, 233));
+  display: flex;
+  justify-content: center;
+  animation-name: fade-in;
+  animation-duration: 5s;
+  transition-timing-function: ease-in-out;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  width: 27.7rem;
+  height: auto;
+  border: 1px solid rgb(18, 34, 209);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(253, 198, 232);
+  margin: 50px 200px 0px 200px;
+}
+
+h2 {
+  align-self: center;
+  margin-top: 0;
+  padding-top: 6px;
+  font-family: Georgia, Geneva, Tahoma, sans-serif;
+}
+label {
+  display: block;
+}
+
+.margins {
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+#tc {
+  display: inline;
+  
+}
+button {
+  width: 350px;
+  height: 40px;
+  background-color: rgb(26, 26, 231);
+  color: white;
+}
+input {
+  padding: 5px;
+}
+
+    </style>
+    
+  </head>
+  <body>
+    <div class="container">
+      <h2>Sign Up</h2>
+      <!-- this div house my form -->
+      <div class="form-display">
+        <!-- form begins here -->
+        <form action="#">
+          <div class="margins">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              size="40"
+              required
+            />
+          </div>
+          <div class="margins">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              size="40"
+              required
+            />
+          </div>
+          <div class="margins">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              size="40"
+              required
+            />
+          </div>
+          <div class="margins">
+            <label for="display-name">Display Name</label>
+            <input
+              type="text"
+              name="display-name"
+              id="display-name"
+              size="40"
+              required
+            />
+          </div>
+          <div class="margins">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" size="40" required />
+          </div>
+            <div class="margins">
+        <input type="checkbox" name="t&c" id="t&c" required />
+        <label for="t&c" id="tc">I accept terms and conditions</label>
+      </div>
+      <div class="margins">
+        <button type="submit">Register</button>
+      </div>
+        </form>
+        <!-- form ends here -->
+      </div>
+  </body>
+</html>
